@@ -1,10 +1,11 @@
 // import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
 // import Team from "./scenes/team";
-// import Invoices from "./scenes/invoices";
+
 // import Contacts from "./scenes/contacts";
 import Bar from "./scenes/bar";
 import Form from "./scenes/form";
@@ -17,9 +18,27 @@ import { ColorModeContext, useMode } from "./theme";
 // import Calendar from "./scenes/calendar/calendar";
 
 
+import Home from "./components/Home/Home";
+import Login from "./components/Login/Login";
+import Signup from "./components/Signup/Signup";
+
+import { auth } from "./firebase";
+
+
 
 function App() {
   const [theme, colorMode] = useMode();
+
+  const [userName, setUserName] = useState("");
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUserName(user.displayName);
+      } else setUserName("");
+    });
+  }, []);
+
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
@@ -29,7 +48,13 @@ function App() {
             <main className="content">
               <Topbar />
               <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/" element={<Home name={userName} />} />
+              
+              <Route path="/Dashboard" element={<Dashboard />} />
+              
+              
               {/* <Route path="/team" element={<Team />} /> */}
               {/* <Route path="/contacts" element={<Contacts />} /> */}
               {/* <Route path="/invoices" element={<Invoices />} /> */}

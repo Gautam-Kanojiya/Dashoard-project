@@ -94,8 +94,26 @@ const ImageUploader = () => {
                 Submit
                 </Button>
             </Box>
-      
-      
+          
+                {/*Result box  */}
+        <Box
+            gridColumn="span 12"
+            backgroundColor={colors.primary[400]}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            // width="90%"
+            // height = "100%"
+        >   
+            <Typography
+                variant="h5"
+                color={colors.greenAccent[500]}
+                sx={{ mt: "15px" }}
+              >
+                Result section
+              </Typography>
+            
+        </Box>
     </Box>
   );
 };

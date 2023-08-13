@@ -40,7 +40,7 @@ const BarChart = ({ isDashboard = false }) => {
         },
       }}
       // when changing keys the graph is getting removed, maybe we have to change the keys from nivo charts website
-      keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
+      keys={["No DR", "Mild", "Moderate",  "Severe", "Proliferative DR"]}
       indexBy="country"
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
       padding={0.3}
@@ -85,7 +85,7 @@ const BarChart = ({ isDashboard = false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "food", // changed
+        legend: isDashboard ? undefined : "presence of Diabetic Retinopathy", // changed
         legendPosition: "middle",
         legendOffset: -40,
       }}
