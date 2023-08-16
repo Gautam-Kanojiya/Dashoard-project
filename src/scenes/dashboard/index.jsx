@@ -56,7 +56,7 @@ const Dashboard = () => {
             justifyContent="center"
           >
             <StatBox
-              title="12,361"
+              title="413"
               subtitle="Tested Data"
               progress="0.75"
               increase="+14%"
@@ -75,8 +75,8 @@ const Dashboard = () => {
             justifyContent="center"
           >
             <StatBox
-              title="431,225"
-              subtitle="Reports Generated"
+              title="103"
+              subtitle="Reports Generated Accuracy : 81.08%"
               progress="0.50"
               increase="+21%"
               icon={
@@ -144,14 +144,14 @@ const Dashboard = () => {
                   fontWeight="600"
                   color={colors.grey[100]}
                 >
-                  Revenue Generated
+                  Categorization by Age
                 </Typography>
                 <Typography
                   variant="h3"
                   fontWeight="bold"
                   color={colors.greenAccent[500]}
                 >
-                  Rs.59,342.32
+                  
                 </Typography>
               </Box>
               <Box>

@@ -432,163 +432,163 @@ export const mockPieData = [
 
 export const mockLineData = [
   {
-    id: "japan",
+    id: "India",
     color: tokens("dark").greenAccent[500],
     data: [
       {
-        x: "plane",
+        x: "25-30",
         y: 101,
       },
       {
-        x: "helicopter",
+        x: "30-35",
         y: 75,
       },
       {
-        x: "boat",
+        x: "35-40",
         y: 36,
       },
       {
-        x: "train",
+        x: "40-45",
         y: 216,
       },
       {
-        x: "subway",
+        x: "45-50",
         y: 35,
       },
       {
-        x: "bus",
+        x: "50-55",
         y: 236,
       },
       {
-        x: "car",
+        x: "55-60",
         y: 88,
       },
       {
-        x: "moto",
+        x: "60-65",
         y: 232,
       },
       {
-        x: "bicycle",
+        x: "65-70",
         y: 281,
       },
       {
-        x: "horse",
+        x: "70-75",
         y: 1,
       },
       {
-        x: "skateboard",
+        x: "75-80",
         y: 35,
       },
       {
-        x: "others",
+        x: "80-85",
         y: 14,
       },
     ],
   },
   {
-    id: "france",
+    id: "America",
     color: tokens("dark").blueAccent[300],
     data: [
       {
-        x: "plane",
+        x: "25-30",
         y: 212,
       },
       {
-        x: "helicopter",
+        x: "30-35",
         y: 190,
       },
       {
-        x: "boat",
+        x: "35-40",
         y: 270,
       },
       {
-        x: "train",
+        x: "40-45",
         y: 9,
       },
       {
-        x: "subway",
+        x: "45-50",
         y: 75,
       },
       {
-        x: "bus",
+        x: "50-55",
         y: 175,
       },
       {
-        x: "car",
+        x: "55-60",
         y: 33,
       },
       {
-        x: "moto",
+        x: "60-65",
         y: 189,
       },
       {
-        x: "bicycle",
+        x: "65-70",
         y: 97,
       },
       {
-        x: "horse",
+        x: "70-75",
         y: 87,
       },
       {
-        x: "skateboard",
+        x: "75-80",
         y: 299,
       },
       {
-        x: "others",
+        x: "80-85",
         y: 251,
       },
     ],
   },
   {
-    id: "us",
+    id: "Japan",
     color: tokens("dark").redAccent[200],
     data: [
       {
-        x: "plane",
+        x: "25-30",
         y: 191,
       },
       {
-        x: "helicopter",
+        x: "30-35",
         y: 136,
       },
       {
-        x: "boat",
+        x: "35-40",
         y: 91,
       },
       {
-        x: "train",
+        x: "40-45",
         y: 190,
       },
       {
-        x: "subway",
+        x: "45-50",
         y: 211,
       },
       {
-        x: "bus",
+        x: "50-55",
         y: 152,
       },
       {
-        x: "car",
+        x: "55-60",
         y: 189,
       },
       {
-        x: "moto",
+        x: "60-65",
         y: 152,
       },
       {
-        x: "bicycle",
+        x: "65-70",
         y: 8,
       },
       {
-        x: "horse",
+        x: "70-75",
         y: 197,
       },
       {
-        x: "skateboard",
+        x: "75-80",
         y: 107,
       },
       {
-        x: "others",
+        x: "80-85",
         y: 170,
       },
     ],
