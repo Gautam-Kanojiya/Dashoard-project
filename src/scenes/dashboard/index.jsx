@@ -24,7 +24,7 @@ const Dashboard = () => {
         <Box display="flex" justifyContent="space-between" alignItems="center">
           <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
   
-          <Box>
+          {/* <Box>
             <Button
               sx={{
                 backgroundColor: colors.blueAccent[700],
@@ -37,7 +37,9 @@ const Dashboard = () => {
               <DownloadOutlinedIcon sx={{ mr: "10px" }} />
               Download Reports
             </Button>
-          </Box>
+          </Box> */}
+
+          
         </Box>
   
         {/* GRID & CHARTS */}
@@ -57,9 +59,9 @@ const Dashboard = () => {
           >
             <StatBox
               title="413"
-              subtitle="Tested Data"
+              subtitle="Trained Data"
               progress="0.75"
-              increase="+14%"
+              //increase="+14%"
               icon={
                 <EmailIcon
                   sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -76,9 +78,9 @@ const Dashboard = () => {
           >
             <StatBox
               title="103"
-              subtitle="Reports Generated Accuracy : 81.08%"
+              subtitle="Tested Accuracy : 81.08%"
               progress="0.50"
-              increase="+21%"
+              //increase="+21%"
               icon={
                 <PointOfSaleIcon
                   sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -97,7 +99,7 @@ const Dashboard = () => {
               title="32,441"
               subtitle="Users"
               progress="0.30"
-              increase="+5%"
+              //increase="+5%"
               icon={
                 <PersonAddIcon
                   sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -116,7 +118,7 @@ const Dashboard = () => {
               title="1,325,134"
               subtitle="Traffic Received"
               progress="0.80"
-              increase="+43%"
+              //increase="+43%"
               icon={
                 <TrafficIcon
                   sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -155,11 +157,11 @@ const Dashboard = () => {
                 </Typography>
               </Box>
               <Box>
-                <IconButton>
+                {/* <IconButton>
                   <DownloadOutlinedIcon
                     sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
                   />
-                </IconButton>
+                </IconButton> */}
               </Box>
             </Box>
             <Box height="250px" m="-20px 0 0 0">
@@ -211,7 +213,7 @@ const Dashboard = () => {
                   p="5px 10px"
                   borderRadius="4px"
                 >
-                  ${transaction.cost}
+                  {transaction.cost}
                 </Box>
               </Box>
             ))}
@@ -234,13 +236,25 @@ const Dashboard = () => {
               mt="25px"
             >
               <ProgressCircle size="125" />
-              <Typography
+              {theme.palette.mode === "dark" ? (
+                <Typography
                 variant="h5"
                 color={colors.greenAccent[500]}
                 sx={{ mt: "15px" }}
               >
                 Rs.48,352 revenue generated
               </Typography>
+            ) : (
+              <Typography
+                variant="h5"
+                color={colors.greenAccent[200]}
+                sx={{ mt: "15px" }}
+              >
+                Rs.48,352 revenue generated
+              </Typography>
+            )}
+        
+              
               <Typography>Includes extra misc expenditures and costs</Typography>
             </Box>
           </Box>

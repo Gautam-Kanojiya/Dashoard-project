@@ -4,6 +4,7 @@ import { tokens } from "../theme";
 const Header = ({ title, subtitle }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  
   return (
     <Box mb="30px">
       <Typography
@@ -14,9 +15,23 @@ const Header = ({ title, subtitle }) => {
       >
         {title}
       </Typography>
-      <Typography variant="h5" color={colors.greenAccent[400]}>
+      
+
+      {theme.palette.mode === "dark" ? (
+              <Typography variant="h5" sx={{ color: colors.greenAccent[500] }}>
+              {subtitle}
+            </Typography>
+          ) : (
+            <Typography variant="h5" sx={{ color: colors.greenAccent[200] }}>
+            {subtitle}
+          </Typography>
+          )}
+        
+      {/* <Typography variant="h5" color={colors.greenAccent[200]}>
         {subtitle}
-      </Typography>
+      </Typography> */}
+      
+      
     </Box>
   );
 };

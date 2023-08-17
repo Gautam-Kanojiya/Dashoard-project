@@ -81,7 +81,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMIN
+                  SPECTACULAR
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -110,9 +110,27 @@ const Sidebar = () => {
                 >
                   User
                 </Typography>
-                <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Admin
-                </Typography>
+                {/* theme based coluring */}
+                {theme.palette.mode === "dark" ? (
+                <Typography
+                variant="h5"
+                color={colors.greenAccent[500]}
+                
+              >
+                VP Admin
+              </Typography>
+            ) : (
+              <Typography
+                variant="h5"
+                color={colors.greenAccent[200]}
+                
+              >
+                VP Admin
+              </Typography>
+            )}
+                {/* <Typography variant="h5" color={colors.greenAccent[500]}>
+                  
+                </Typography> */}
               </Box>
             </Box>
           )}
@@ -126,7 +144,7 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
 
-            <Typography
+            {/* <Typography
               variant="h6"
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
@@ -153,7 +171,7 @@ const Sidebar = () => {
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            /> */}
 
             <Typography
               variant="h6"
@@ -169,15 +187,15 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
+            {/* <Item
               title="Calendar"
               to="/calendar"
               icon={<CalendarTodayOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            /> */}
             <Item
-              title="FAQ Page"
+              title="FAQs"
               to="/faq"
               icon={<HelpOutlineOutlinedIcon />}
               selected={selected}
@@ -189,7 +207,7 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Charts
+              Statistics
             </Typography>
             <Item
               title="Bar Chart"
