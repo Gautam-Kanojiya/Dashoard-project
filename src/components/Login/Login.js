@@ -52,7 +52,7 @@ function Login() {
         justifyContent="center"
         
     >
-      <div className={styles.innerBox}>
+      <div className={styles.innerBox} >
         <h1 className={styles.heading}>Login</h1>
 
         <InputControl

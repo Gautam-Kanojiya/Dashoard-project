@@ -59,7 +59,7 @@ const Dashboard = () => {
           >
             <StatBox
               title="413"
-              subtitle="Trained Data"
+              subtitle="Training Data"
               progress="0.75"
               //increase="+14%"
               icon={
@@ -78,7 +78,7 @@ const Dashboard = () => {
           >
             <StatBox
               title="103"
-              subtitle="Tested Accuracy : 81.08%"
+              subtitle="Testing Data"
               progress="0.50"
               //increase="+21%"
               icon={

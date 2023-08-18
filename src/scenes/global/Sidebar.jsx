@@ -111,7 +111,7 @@ const Sidebar = () => {
                   User
                 </Typography>
                 {/* theme based coluring */}
-                {theme.palette.mode === "dark" ? (
+                {/* {theme.palette.mode === "dark" ? (
                 <Typography
                 variant="h5"
                 color={colors.greenAccent[500]}
@@ -127,7 +127,7 @@ const Sidebar = () => {
               >
                 VP Admin
               </Typography>
-            )}
+            )} */}
                 {/* <Typography variant="h5" color={colors.greenAccent[500]}>
                   
                 </Typography> */}
@@ -150,10 +150,10 @@ const Sidebar = () => {
               sx={{ m: "15px 0 5px 20px" }}
             >
               Data
-            </Typography>
+            </Typography> */}
             <Item
-              title="Manage"
-              to="/team"
+              title="Profile"
+              to="/profile"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -165,7 +165,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
+            {/* <Item
               title="Invoices Balances"
               to="/invoices"
               icon={<ReceiptOutlinedIcon />}
@@ -173,13 +173,13 @@ const Sidebar = () => {
               setSelected={setSelected}
             /> */}
 
-            <Typography
+            {/* <Typography
               variant="h6"
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
               Pages
-            </Typography>
+            </Typography> */}
             <Item
               title="Test Page"
               to="/form"
@@ -202,11 +202,14 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
 
-            <Typography
+            {/* Stats part  */}
+            {/* <Typography
               variant="h6"
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
+
+              
               Statistics
             </Typography>
             <Item
@@ -236,7 +239,7 @@ const Sidebar = () => {
               icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            /> */}
           </Box>
         </Menu>
       </ProSidebar>
