@@ -31,52 +31,56 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-          Question 1
+          What is Diabetic retinopathy?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          Diabetic retinopathy is a diabetes complication that affects eyes. 
+          It's caused by damage to the blood vessels of the light-sensitive tissue at the back of the eye(retina).
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-          Question 1
+          When to see an eye doctor?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          If you have diabetes, see your eye doctor for a yearly eye exam with dilation — even if your vision seems fine.
+          Developing diabetes when pregnant (gestational diabetes) or having diabetes before becoming pregnant can increase your risk of diabetic retinopathy. 
+          If you're pregnant, your eye doctor might recommend additional eye exams throughout your pregnancy.
+          Contact your eye doctor right away if your vision changes suddenly or becomes blurry, spotty or hazy.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-          Question 1
+          What are the types of diabetic retinopathy?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          Early diabetic retinopathy and Advanced diabetic retinopathy
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-          Question 1
+          What is Advanced diabetic retinopathy ?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          In this type, damaged blood vessels close off, causing the growth of new, abnormal blood vessels in the retina. 
+          These new blood vessels are fragile and can leak into the clear, jellylike substance that fills the center of your eye (vitreous).
+          Eventually, scar tissue from the growth of new blood vessels can cause the retina to detach from the back of your eye. 
+          If the new blood vessels interfere with the normal flow of fluid out of the eye, pressure can build in the eyeball. 
+          This buildup can damage the nerve that carries images from your eye to your brain (optic nerve), resulting in glaucoma.
           </Typography>
         </AccordionDetails>
       </Accordion>

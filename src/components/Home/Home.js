@@ -49,7 +49,7 @@ function Home(props) {
   return (
     <Box>
       <Box display="flex" justifyContent="space-between" alignItems="center">
-          <Header title="DIABETIC RETINOTHERAPY" subtitle="" />
+          <Header title="DIABETIC RETINOPATHY " subtitle="" />
 
           <Box 
             display="flex" 
