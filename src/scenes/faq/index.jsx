@@ -17,13 +17,14 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            Question 1
+           How to manage your diabetes?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          Make healthy eating and physical activity part of your daily routine. 
+          Try to get at least 150 minutes of moderate aerobic activity, such as walking, each week. 
+          Take oral diabetes medications or insulin as directed.
           </Typography>
         </AccordionDetails>
       </Accordion>
